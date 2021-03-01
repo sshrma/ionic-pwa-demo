@@ -18,8 +18,11 @@
     "@angular/forms": "~11.2.0",
     "@angular/platform-browser": "~11.2.0",
     "@angular/platform-browser-dynamic": "~11.2.0",
+    "@angular/pwa": "^0.1102.2",
     "@angular/router": "~11.2.0",
     "@ionic/angular": "^5.5.2",
+    "http-server": "^0.12.3",
+    "lighthouse": "^7.2.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
     "zone.js": "~0.10.2"
