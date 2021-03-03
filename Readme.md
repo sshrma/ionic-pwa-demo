@@ -48,4 +48,6 @@ $>npx pwa-asset-generator ../logo.png -b "linear-gradient(to right, #fa709a 0%, 
 - https://github.com/onderceylan/pwa-asset-generator
 - https://web.dev/install-criteria/
 - https://dev.to/oskarlarsson/designing-native-like-progressive-web-apps-for-ios-510o
+- https://web.dev/customize-install/#criteria
+
 ```

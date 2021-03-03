@@ -22,7 +22,7 @@
             <ion-label>{{ label }}</ion-label>
           </ion-item>
         </ion-list>
-        Hello this is a chat app. You should let us send you notifications for this reason.
+        Hello you should let us send you notifications.
         <button (click)="requestPermission()">
           GIVE PERMISSION
         </button>
@@ -34,6 +34,12 @@
         <button (click)="startListening()">
           Get notified!
         </button>
+        <br/>
+        <span >Add this app to home screen:
+          <button class="btn" ion-button full (click)="add_to_home($event)">
+            ADD TO HOME SCREEN
+          </button>
+        </span>
       </ion-content>
     </ion-menu>
     <ion-router-outlet id="main-content"></ion-router-outlet>
