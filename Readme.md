@@ -1,6 +1,21 @@
 Demo PWA App using ionic & angular
 ===================================
 
+### Installation & running PWA ###
+```
+1) Clone GIT repository and go to the folder cloned
+2) Add custom code to custom service workers available at "src/app/sw/"
+3) Build for production to enable service workers
+$>npx ng build --prod 
+OR
+$>ionic build --prod
+4) Build / start dockerized apache to serve the PWA app by following command,
+$> docker-compose up -d 
+5) Open PWA app in browser at http://localhost:14080/
+6) Go to developer tools > Application > service worker tab to view the services workers running
+
+```
+
 ### Generate splash & icon assets ###
 ```
 1)Create a new directory:
