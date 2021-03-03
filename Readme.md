@@ -32,5 +32,5 @@ $>npx pwa-asset-generator ../logo.png -b "linear-gradient(to right, #fa709a 0%, 
 - https://www.netguru.com/codestories/few-tips-that-will-make-your-pwa-on-ios-feel-like-native
 - https://github.com/onderceylan/pwa-asset-generator
 - https://web.dev/install-criteria/
-- 
+- https://dev.to/oskarlarsson/designing-native-like-progressive-web-apps-for-ios-510o
 ```

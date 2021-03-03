@@ -17,6 +17,7 @@
   <!-- add to homescreen for ios -->
   <meta name="apple-mobile-web-app-capable" content="yes"/>
   <meta name="apple-mobile-web-app-status-bar-style" content="black"/>
+  <meta name="apple-mobile-web-app-title" content="IPWAD">
 
   <!-- meta tags for social share -->
   <meta property="og:title" content="Ionic PWA Demo App">
@@ -29,6 +30,11 @@
 
   <!-- Apple icon assets -->
   <link rel="apple-touch-icon" href="assets/generated/apple-icon-180.png">
+  <link rel="apple-touch-icon" sizes="152x152" href="assets/icons/icon-152x152.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/icons/icon-180x180.png">
+  <link rel="apple-touch-icon" sizes="167x167" href="assets/icons/icon-167x167.png">
+
+  <!-- Apple splash assets -->
   <link rel="apple-touch-startup-image" href="assets/generated/apple-splash-2048-2732.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
   <link rel="apple-touch-startup-image" href="assets/generated/apple-splash-2732-2048.jpg" media="(device-width: 1024px) and (device-height: 1366px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape)">
   <link rel="apple-touch-startup-image" href="assets/generated/apple-splash-1668-2388.jpg" media="(device-width: 834px) and (device-height: 1194px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait)">
@@ -58,7 +64,7 @@
 
 </head>
 
-<body>
+<body ontouchstart=””>
   <app-root></app-root>
   <noscript>Please enable JavaScript to continue using this application.</noscript>
 </body>

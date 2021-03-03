@@ -1,6 +1,10 @@
 {
   "$schema": "./node_modules/@angular/service-worker/config/schema.json",
   "index": "/index.html",
+  "appData": {
+    "version": "0.0.1",
+    "changelog": "Added better resource caching"
+  },
   "assetGroups": [
     {
       "name": "app",
@@ -11,7 +15,12 @@
           "/index.html",
           "/manifest.webmanifest",
           "/*.css",
-          "/*.js"
+          "/*.js",
+          "/vendor.*.js",
+          "/main.*.js",
+          "/polyfills.*.js",
+          "/runtime.*.js",
+          "!/*-sw.js"
         ]
       }
     },
@@ -22,8 +31,35 @@
       "resources": {
         "files": [
           "/assets/**",
-          "/*.(eot|svg|cur|jpg|png|webp|gif|otf|ttf|woff|woff2|ani)"
+          "/*.(eot|svg|cur|jpg|jpe|jpeg|png|webp|gif|otf|ttf|woff|woff2|ani)"
+        ],
+        "urls": [
+          "https://fonts.googleapis.com/**"
         ]
+      }
+    }
+  ],
+  "dataGroups": [
+    {
+      "name": "from-static",
+      "version": 1,
+      "urls": ["/data/data.json"],
+      "cacheConfig": {
+        "strategy": "performance",
+        "maxSize": 10,
+        "maxAge": "1d",
+        "timeout": "5s"
+      }
+    },
+    {
+      "name": "from-api",
+      "version": 2,
+      "urls": ["/dashboard", "/user"],
+      "cacheConfig": {
+        "strategy": "freshness",
+        "maxSize": 15,
+        "maxAge": "1h",
+        "timeout": "3s"
       }
     }
   ]
