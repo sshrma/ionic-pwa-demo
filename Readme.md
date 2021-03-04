@@ -35,6 +35,8 @@ $>npx pwa-asset-generator ../logo.png -b "linear-gradient(to right, #fa709a 0%, 
 ### Import Notes: ###
 ```
 - Always add 'npx' before runing any 'ng' commands otherwise it will fail.
+- For security reasons, as others have written as well, browsers don't allow you to manually trigger the install event. However, there is a way you can test it yourself. Go to chrome://flags and search / enable "Bypass user engagement checks"
+- App must fullfill the criteria mentioned in the separate link below in order to trigger event handling the App Install.
 
 ```
 

@@ -35,10 +35,19 @@
                 "input": "src/app/sw",
                 "output": "/"
               },
+              {
+                "glob": "**/favicon.*",
+                "input": "src/assets/icon",
+                "output": "/"
+              },
+              {
+                "glob": "**/.htaccess",
+                "input": "./",
+                "output": "/"
+              },
               "src/manifest.webmanifest",
               "src/robots.txt",
-              "src/browserconfig.xml",
-              "src/favicon.ico"
+              "src/browserconfig.xml"
             ],
             "styles": ["src/theme/variables.scss", "src/global.scss"],
             "scripts": []
