@@ -11,11 +11,12 @@ services:
       - frontend
     ports:
       - "${HOST_HTTP_PORT}:80"
-#      - "${HOST_HTTPS_PORT}:443"
+      - "${HOST_HTTPS_PORT}:443"
     volumes:
       - ${PROJECT_ROOT}/:/var/www/html/
       - ./apache/certificate/apache.key:/usr/local/apache2/certificate/apache.key
       - ./apache/certificate/apache-certificate.crt:/usr/local/apache2/certificate/apache-certificate.crt
+      - ./apache/certificate/ca_bundle.crt:/usr/local/apache2/certificate/ca_bundle.crt
       - ./apache/demo.apache.conf:/usr/local/apache2/conf/demo.apache.conf
     container_name: pwa_apache
 
